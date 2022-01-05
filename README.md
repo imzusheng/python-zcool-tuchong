@@ -1,4 +1,4 @@
-需要修改的代码在[works.py](./blogWorks/spiders/works.py)
+### 需要修改的代码在[works.py](./blogWorks/spiders/works.py)
 ```bash
 def __init__(self):
     self.username = '<站酷账号>'
@@ -12,15 +12,15 @@ def __init__(self):
     ...
 ```
 
-`chromedriver`版本要和PC安装的chrome版本匹配, 这个版本是`96.0.4664.45`
+### `chromedriver`版本要和PC安装的chrome版本匹配, 这个版本是`96.0.4664.45`
 
-在根目录执行
+### 在根目录执行
 ```bash
 scrapy crawl works
 ```
 
-站酷保存的数据格式
-```json lines
+### 站酷保存的数据格式
+```javascript
 {
     "_id": "1641377714527066",  // 时间戳
     "describeTitle": "P50 Pro", // 标题
@@ -34,8 +34,8 @@ scrapy crawl works
 }
 ```
 
-图虫保存的数据格式
-```json lines
+### 图虫保存的数据格式
+```javascript
 {
     "_id": "1641377714620644",  // 时间戳
     "category": "Photo", // 分类
