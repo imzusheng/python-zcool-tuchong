@@ -37,7 +37,7 @@ class WorksSpider(scrapy.Spider):
     def __init__(self):
         print("@_spider_init")
         self.username = '<站酷账号>'
-        self.password = '<站酷密码>'
+        self.password = '<站酷账号>'
         self.browser = webdriver_init()
         # mongodb uri
         self.client = pymongo.MongoClient('mongodb://localhost:27017')
